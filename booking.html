@@ -1,0 +1,302 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ServiceHub | Local Services<</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+<nav class="navbar navbar-expand-lg shadow-sm">
+
+    <div class="container">
+
+        <a class="navbar-brand" href="index.html">
+            ServiceHub<span class="logo-dot"></span>
+        </a>
+
+        <div class="navbar-nav ms-auto">
+
+            <a class="nav-link" href="providers.html">
+                Services
+            </a>
+
+            <a class="nav-link" href="customer-dashboard.html">
+                Dashboard
+            </a>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+<section class="page-header">
+
+    <div class="container text-center">
+
+        <span class="text-sage fw-bold">
+            SERVICE REQUEST
+        </span>
+
+        <h1 class="mt-2">
+            Book a Service
+        </h1>
+
+        <p class="text-muted">
+            Tell us what you need and when you need it.
+        </p>
+
+    </div>
+
+</section>
+
+
+<section class="section-padding">
+
+    <div class="container">
+
+        <div class="row justify-content-center">
+
+            <div class="col-lg-8">
+
+                <div class="form-box">
+
+                    <div class="d-flex justify-content-between
+                                align-items-center mb-4 flex-wrap gap-2">
+
+                        <div>
+
+                            <h3 class="fw-bold mb-1">
+                                Booking Details
+                            </h3>
+
+                            <p class="text-muted mb-0">
+                                All fields are required.
+                            </p>
+
+                        </div>
+
+                        <span class="badge rounded-pill"
+                              style="background-color:#fff1c9;color:#806a29;padding:10px 15px;">
+
+                            Booking ID: BK-2026-001
+
+                        </span>
+
+                    </div>
+
+
+                    <form action="customer-dashboard.html">
+
+
+                        <!-- SERVICE -->
+
+                        <div class="mb-4">
+
+                            <label class="form-label">
+                                Service *
+                            </label>
+
+                            <select class="form-select"
+                                    required>
+
+                                <option value="">
+                                    Select service
+                                </option>
+
+                                <option>
+                                    Plumbing
+                                </option>
+
+                                <option>
+                                    Home Cleaning
+                                </option>
+
+                                <option>
+                                    Electrical
+                                </option>
+
+                                <option>
+                                    Beauty & Salon
+                                </option>
+
+                                <option>
+                                    AC Repair
+                                </option>
+
+                                <option>
+                                    Painting
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- DATE + TIME -->
+
+                        <div class="row g-3 mb-4">
+
+                            <div class="col-md-6">
+
+                                <label class="form-label">
+                                    Preferred Date *
+                                </label>
+
+                                <input type="date"
+                                       class="form-control"
+                                       required>
+
+                            </div>
+
+
+                            <div class="col-md-6">
+
+                                <label class="form-label">
+                                    Preferred Time *
+                                </label>
+
+                                <input type="time"
+                                       class="form-control"
+                                       required>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- LOCATION -->
+
+                        <div class="mb-4">
+
+                            <label class="form-label">
+                                Service Location *
+                            </label>
+
+                            <input type="text"
+                                   class="form-control"
+                                   placeholder="Enter complete service location"
+                                   required>
+
+                        </div>
+
+
+                        <!-- DESCRIPTION -->
+
+                        <div class="mb-4">
+
+                            <label class="form-label">
+                                Describe Your Requirement *
+                            </label>
+
+                            <textarea class="form-control"
+                                      rows="5"
+                                      placeholder="Tell the provider what you need help with..."
+                                      required></textarea>
+
+                        </div>
+
+
+                        <!-- CUSTOMER NAME -->
+
+                        <div class="row g-3 mb-4">
+
+                            <div class="col-md-6">
+
+                                <label class="form-label">
+                                    Your Name *
+                                </label>
+
+                                <input type="text"
+                                       class="form-control"
+                                       placeholder="Enter your name"
+                                       required>
+
+                            </div>
+
+
+                            <div class="col-md-6">
+
+                                <label class="form-label">
+                                    Phone Number *
+                                </label>
+
+                                <input type="tel"
+                                       class="form-control"
+                                       placeholder="03XX-XXXXXXX"
+                                       required>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="alert alert-light border">
+
+                            <strong>
+                                💡 Note:
+                            </strong>
+
+                            Your provider will review this request
+                            and respond to your booking.
+
+                        </div>
+
+
+                        <button type="submit"
+                                class="btn btn-primary w-100 py-3">
+
+                            Submit Booking Request
+
+                        </button>
+
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<footer class="py-5">
+
+    <div class="container text-center">
+
+        <div class="footer-brand">
+            ServiceHub<span class="logo-dot"></span>
+        </div>
+
+        <p>
+            Your local service connection.
+        </p>
+
+        <small>
+            © 2026 ServiceHub
+        </small>
+
+    </div>
+
+</footer>
+
+    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+</body>
+</html>
+

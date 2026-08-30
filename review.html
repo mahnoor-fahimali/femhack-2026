@@ -1,0 +1,229 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>ServiceHub | Local Services</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar shadow-sm">
+
+        <div class="container">
+
+            <a class="navbar-brand" href="index.html">
+                ServiceHub<span class="logo-dot"></span>
+            </a>
+
+            <a href="customer-dashboard.html"
+               class="btn btn-outline-primary dashboard-btn">
+
+                ← Dashboard
+
+            </a>
+
+        </div>
+
+    </nav>
+
+
+    <!-- PAGE HEADER -->
+
+    <section class="page-header">
+
+        <div class="container text-center">
+
+            <span class="text-sage fw-bold">
+                SERVICE COMPLETED ✓
+            </span>
+
+            <h1 class="mt-2">
+                How was your experience?
+            </h1>
+
+            <p class="text-muted">
+                Your feedback helps other customers choose better providers.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- REVIEW SECTION -->
+
+    <section class="section-padding review-section">
+
+        <div class="container">
+
+            <div class="row justify-content-center">
+
+                <div class="col-12 col-sm-11 col-md-9 col-lg-7">
+
+                    <div class="form-box review-box">
+
+
+                        <!-- PROVIDER -->
+
+                        <div class="text-center mb-4">
+
+                            <div class="profile-avatar-large mb-3">
+                                👩‍💼
+                            </div>
+
+                            <h3 class="fw-bold">
+                                Sana Home Care
+                            </h3>
+
+                            <p class="text-muted">
+                                Home Cleaning
+                            </p>
+
+                            <span class="status status-completed">
+                                Completed
+                            </span>
+
+                        </div>
+
+
+                        <!-- REVIEW FORM -->
+
+                        <form action="customer-dashboard.html">
+
+
+                            <!-- RATING -->
+
+                            <div class="mb-4">
+
+                                <label class="form-label">
+                                    Your Rating *
+                                </label>
+
+                                <select class="form-select"
+                                        required>
+
+                                    <option value="">
+                                        Select rating
+                                    </option>
+
+                                    <option>
+                                        5 — Excellent
+                                    </option>
+
+                                    <option>
+                                        4 — Very Good
+                                    </option>
+
+                                    <option>
+                                        3 — Good
+                                    </option>
+
+                                    <option>
+                                        2 — Needs Improvement
+                                    </option>
+
+                                    <option>
+                                        1 — Poor
+                                    </option>
+
+                                </select>
+
+                                <div class="star-choice mt-2">
+                                    ★★★★★
+                                </div>
+
+                            </div>
+
+
+                            <!-- REVIEW -->
+
+                            <div class="mb-4">
+
+                                <label class="form-label">
+                                    Your Review *
+                                </label>
+
+                                <textarea class="form-control"
+                                          rows="6"
+                                          placeholder="Tell us about your experience..."
+                                          required></textarea>
+
+                            </div>
+
+
+                            <!-- NOTE -->
+
+                            <div class="alert alert-light border review-note">
+
+                                ⭐ You can submit one review for this
+                                completed booking.
+
+                            </div>
+
+
+                            <!-- SUBMIT -->
+
+                            <button type="submit"
+                                    class="btn btn-primary w-100 py-3">
+
+                                Submit Review
+
+                            </button>
+
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer class="py-5">
+
+        <div class="container text-center">
+
+            <div class="footer-brand">
+                ServiceHub<span class="logo-dot"></span>
+            </div>
+
+            <p>
+                Your feedback makes our community better.
+            </p>
+
+            <small>
+                © 2026 ServiceHub
+            </small>
+
+        </div>
+
+    </footer>
+
+
+</body>
+
+</html>
+

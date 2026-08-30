@@ -1,0 +1,4938 @@
+
+/* =========================================================
+   SERVICEHUB
+   CUSTOM CSS
+   Pastel Service Marketplace Theme
+   ========================================================= */
+
+:root {
+    --sage: #789b83;
+    --sage-dark: #52735d;
+    --sage-light: #dfeee2;
+
+    --mint: #dff5ec;
+    --cream: #fffaf3;
+    --peach: #ffe8d6;
+    --pink: #fce1e7;
+    --lavender: #ebe4f7;
+    --yellow: #fff1c9;
+
+    --dark: #34463a;
+    --text: #637169;
+    --white: #ffffff;
+
+    --shadow: 0 12px 35px rgba(82, 115, 93, 0.12);
+}
+
+
+/* ================= GENERAL ================= */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--cream);
+    color: var(--dark);
+}
+
+a {
+    text-decoration: none;
+}
+
+section {
+    overflow: hidden;
+}
+
+.text-sage {
+    color: var(--sage-dark);
+}
+
+.bg-soft {
+    background-color: #f9f7f2;
+}
+
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+    background-color: rgba(255, 255, 255, 0.97);
+    min-height: 76px;
+}
+
+.navbar-brand {
+    color: var(--sage-dark) !important;
+    font-size: 27px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+}
+
+.logo-dot {
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    background-color: #e9a7b5;
+    border-radius: 50%;
+    margin-left: 3px;
+}
+
+.nav-link {
+    color: var(--dark) !important;
+    font-weight: 600;
+    padding: 10px 14px !important;
+}
+
+.nav-link:hover {
+    color: var(--sage) !important;
+}
+
+.navbar-toggler {
+    border: 1px solid #d9e6dc;
+}
+
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 3px rgba(120, 155, 131, 0.15);
+}
+
+
+/* ================= BUTTONS ================= */
+
+.btn-primary {
+    background-color: var(--sage);
+    border-color: var(--sage);
+    border-radius: 12px;
+    font-weight: 600;
+}
+
+.btn-primary:hover {
+    background-color: var(--sage-dark);
+    border-color: var(--sage-dark);
+}
+
+.btn-outline-primary {
+    color: var(--sage-dark);
+    border-color: var(--sage);
+    border-radius: 12px;
+    font-weight: 600;
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--sage);
+    border-color: var(--sage);
+    color: white;
+}
+
+.btn-soft-pink {
+    background-color: var(--pink);
+    color: #8b5864;
+    border: none;
+    border-radius: 12px;
+    font-weight: 600;
+}
+
+.btn-soft-pink:hover {
+    background-color: #f5ccd5;
+    color: #704651;
+}
+
+
+/* ================= HERO ================= */
+
+.hero {
+    min-height: 650px;
+    display: flex;
+    align-items: center;
+
+    background:
+        radial-gradient(circle at 85% 15%, #fce1e7 0, transparent 22%),
+        radial-gradient(circle at 10% 85%, #dff5ec 0, transparent 25%),
+        linear-gradient(135deg, #e9f4e9, #fffaf3);
+}
+
+.hero-badge {
+    display: inline-block;
+    background-color: white;
+    color: var(--sage-dark);
+    padding: 9px 17px;
+    border-radius: 50px;
+    font-weight: 700;
+    box-shadow: 0 5px 20px rgba(82, 115, 93, 0.08);
+}
+
+.hero h1 {
+    font-size: clamp(42px, 6vw, 72px);
+    line-height: 1.05;
+    font-weight: 800;
+    color: var(--dark);
+    letter-spacing: -2px;
+}
+
+.hero h1 span {
+    color: var(--sage-dark);
+}
+
+.hero-text {
+    color: var(--text);
+    font-size: 18px;
+    line-height: 1.8;
+    max-width: 600px;
+}
+
+.hero-card {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 30px;
+    padding: 30px;
+    box-shadow: var(--shadow);
+}
+
+.hero-card-icon {
+    width: 65px;
+    height: 65px;
+    background-color: var(--sage-light);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+
+/* ================= SECTION ================= */
+
+.section-padding {
+    padding: 90px 0;
+}
+
+.section-title {
+    color: var(--dark);
+    font-weight: 800;
+    font-size: 38px;
+}
+
+.section-subtitle {
+    color: var(--text);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* ================= SERVICE CARDS ================= */
+
+.service-card {
+    height: 100%;
+    background-color: white;
+    border: 1px solid #edf0eb;
+    border-radius: 22px;
+    padding: 28px 20px;
+    transition: 0.25s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-7px);
+    box-shadow: var(--shadow);
+}
+
+.service-icon {
+    width: 72px;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 22px;
+    margin: 0 auto 18px;
+    font-size: 32px;
+}
+
+.icon-green {
+    background-color: var(--sage-light);
+}
+
+.icon-pink {
+    background-color: var(--pink);
+}
+
+.icon-peach {
+    background-color: var(--peach);
+}
+
+.icon-purple {
+    background-color: var(--lavender);
+}
+
+.icon-yellow {
+    background-color: var(--yellow);
+}
+
+.icon-mint {
+    background-color: var(--mint);
+}
+
+
+/* ================= PROVIDER CARD ================= */
+
+.provider-card {
+    height: 100%;
+    overflow: hidden;
+    border: none;
+    border-radius: 24px;
+    background-color: white;
+    box-shadow: 0 5px 25px rgba(82, 115, 93, 0.07);
+    transition: 0.25s ease;
+}
+
+.provider-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow);
+}
+
+.provider-top {
+    padding: 25px;
+    background-color: var(--sage-light);
+}
+
+.provider-avatar {
+    width: 82px;
+    height: 82px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.provider-body {
+    padding: 25px;
+}
+
+.rating {
+    color: #d99b35;
+    letter-spacing: 2px;
+}
+
+.price {
+    color: var(--sage-dark);
+    font-weight: 700;
+}
+
+
+/* Different provider pastel backgrounds */
+
+.provider-green {
+    background-color: var(--sage-light);
+}
+
+.provider-pink {
+    background-color: var(--pink);
+}
+
+.provider-peach {
+    background-color: var(--peach);
+}
+
+.provider-purple {
+    background-color: var(--lavender);
+}
+
+.provider-yellow {
+    background-color: var(--yellow);
+}
+
+.provider-mint {
+    background-color: var(--mint);
+}
+
+
+/* ================= SEARCH BOX ================= */
+
+.search-box {
+    background-color: white;
+    border-radius: 25px;
+    padding: 25px;
+    box-shadow: var(--shadow);
+}
+
+
+/* ================= PAGE HEADER ================= */
+
+.page-header {
+    padding: 85px 0;
+    background:
+        radial-gradient(circle at 90% 20%, var(--pink), transparent 25%),
+        linear-gradient(135deg, var(--sage-light), var(--cream));
+}
+
+.page-header h1 {
+    font-size: clamp(38px, 5vw, 55px);
+    font-weight: 800;
+}
+
+
+/* ================= FORM ================= */
+
+.form-box {
+    background-color: white;
+    border-radius: 25px;
+    padding: 35px;
+    box-shadow: var(--shadow);
+}
+
+.form-label {
+    font-weight: 600;
+    color: var(--dark);
+}
+
+.form-control,
+.form-select {
+    border: 1px solid #dce6df;
+    border-radius: 12px;
+    padding: 13px 15px;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--sage);
+    box-shadow: 0 0 0 4px rgba(120, 155, 131, 0.12);
+}
+
+
+/* ================= PROFILE ================= */
+
+.profile-box {
+    background-color: white;
+    border-radius: 28px;
+    padding: 40px;
+    box-shadow: var(--shadow);
+}
+
+.profile-avatar-large {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: var(--sage-light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 75px;
+    margin: auto;
+}
+
+.info-item {
+    background-color: #fafbf9;
+    border-radius: 15px;
+    padding: 18px;
+    height: 100%;
+}
+
+.info-item small {
+    color: #89958e;
+}
+
+.info-item strong {
+    display: block;
+    margin-top: 5px;
+}
+
+
+/* ================= DASHBOARD ================= */
+
+.dashboard-card {
+    border: none;
+    border-radius: 22px;
+    background-color: white;
+    box-shadow: 0 5px 25px rgba(82, 115, 93, 0.07);
+}
+
+.dashboard-number {
+    font-size: 35px;
+    font-weight: 800;
+    color: var(--sage-dark);
+}
+
+.status {
+    display: inline-block;
+    border-radius: 50px;
+    padding: 7px 13px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.status-pending {
+    background-color: var(--yellow);
+    color: #806a29;
+}
+
+.status-accepted {
+    background-color: var(--sage-light);
+    color: #42684d;
+}
+
+.status-progress {
+    background-color: #dfeef6;
+    color: #466b7d;
+}
+
+.status-completed {
+    background-color: var(--mint);
+    color: #3d725e;
+}
+
+.status-rejected {
+    background-color: var(--pink);
+    color: #895665;
+}
+
+
+/* ================= PROCESS ================= */
+
+.step-card {
+    text-align: center;
+    padding: 25px;
+}
+
+.step-number {
+    width: 58px;
+    height: 58px;
+    background-color: var(--sage-light);
+    color: var(--sage-dark);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+
+/* ================= REVIEW ================= */
+
+.star-choice {
+    font-size: 32px;
+    color: #e2aa4b;
+    letter-spacing: 5px;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    background-color: #3d5545;
+    color: #edf5ef;
+}
+
+footer a {
+    color: #dce9df;
+}
+
+footer a:hover {
+    color: white;
+}
+
+.footer-brand {
+    font-size: 25px;
+    font-weight: 800;
+}
+
+
+/* =========================================================
+   RESPONSIVE DESIGN
+   INDEX PAGE
+   ========================================================= */
+
+
+/* ================= TABLET & SMALL LAPTOP ================= */
+
+@media only screen and (max-width: 1199px) {
+
+    .hero {
+        min-height: auto;
+        padding: 80px 0;
+    }
+
+    .hero h1 {
+        font-size: 58px;
+        letter-spacing: -1.5px;
+    }
+
+    .hero-text {
+        font-size: 17px;
+        line-height: 1.7;
+    }
+
+    .section-padding {
+        padding: 75px 0;
+    }
+
+    .section-title {
+        font-size: 35px;
+    }
+
+    .service-card {
+        padding: 25px 18px;
+    }
+
+    .provider-top {
+        padding: 22px;
+    }
+
+    .provider-body {
+        padding: 22px;
+    }
+
+    .search-box {
+        padding: 22px;
+    }
+
+}
+
+
+/* ================= TABLET ================= */
+
+@media only screen and (max-width: 991px) {
+
+    /* GENERAL */
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .container {
+        max-width: 95%;
+    }
+
+
+    /* NAVBAR */
+
+    .navbar {
+        min-height: 70px;
+        padding: 10px 0;
+    }
+
+    .navbar-brand {
+        font-size: 25px;
+    }
+
+    .navbar-collapse {
+        background-color: white;
+        padding: 15px 10px;
+        margin-top: 10px;
+        border-radius: 15px;
+        box-shadow: 0 8px 25px rgba(82, 115, 93, 0.08);
+    }
+
+    .navbar-nav {
+        width: 100%;
+    }
+
+    .nav-item {
+        width: 100%;
+    }
+
+    .nav-link {
+        padding: 12px 15px !important;
+        border-radius: 10px;
+    }
+
+    .nav-link:hover {
+        background-color: var(--sage-light);
+    }
+
+
+    /* HERO */
+
+    .hero {
+        padding: 75px 0;
+    }
+
+    .hero h1 {
+        font-size: 52px;
+        line-height: 1.08;
+    }
+
+    .hero-text {
+        max-width: 650px;
+    }
+
+    .hero-card {
+        padding: 28px;
+        margin-top: 30px;
+    }
+
+
+    /* SECTIONS */
+
+    .section-padding {
+        padding: 70px 0;
+    }
+
+    .section-title {
+        font-size: 34px;
+    }
+
+
+    /* SERVICE CARDS */
+
+    .service-card {
+        min-height: 100%;
+        padding: 25px 18px;
+    }
+
+
+    /* PROVIDER CARDS */
+
+    .provider-top {
+        padding: 22px;
+    }
+
+    .provider-body {
+        padding: 22px;
+    }
+
+    .provider-avatar {
+        width: 75px;
+        height: 75px;
+        font-size: 35px;
+    }
+
+
+    /* SEARCH */
+
+    .search-box {
+        padding: 22px;
+    }
+
+
+    /* PAGE HEADER */
+
+    .page-header {
+        padding: 70px 0;
+    }
+
+    .page-header h1 {
+        font-size: 48px;
+    }
+
+
+    /* FORMS */
+
+    .form-box {
+        padding: 30px 25px;
+    }
+
+
+    /* PROFILE */
+
+    .profile-box {
+        padding: 30px 25px;
+    }
+
+    .profile-avatar-large {
+        width: 130px;
+        height: 130px;
+        font-size: 65px;
+    }
+
+
+    /* DASHBOARD */
+
+    .dashboard-number {
+        font-size: 32px;
+    }
+
+
+    /* FOOTER */
+
+    .footer-brand {
+        font-size: 23px;
+    }
+
+}
+
+
+/* ================= MOBILE ================= */
+
+@media only screen and (max-width: 767px) {
+
+    /* GENERAL */
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .container {
+        width: 92%;
+        max-width: 92%;
+    }
+
+
+    /* NAVBAR */
+
+    .navbar {
+        min-height: 65px;
+        padding: 9px 0;
+    }
+
+    .navbar-brand {
+        font-size: 24px;
+    }
+
+    .logo-dot {
+        width: 9px;
+        height: 9px;
+    }
+
+    .navbar-toggler {
+        padding: 7px 10px;
+        border-radius: 10px;
+    }
+
+    .navbar-collapse {
+        margin-top: 10px;
+        padding: 12px;
+        border-radius: 15px;
+    }
+
+    .nav-link {
+        font-size: 15px;
+        padding: 11px 13px !important;
+    }
+
+
+    /* HERO */
+
+    .hero {
+        text-align: center;
+        padding: 65px 0;
+    }
+
+    .hero h1 {
+        font-size: 44px;
+        line-height: 1.08;
+        letter-spacing: -1px;
+    }
+
+    .hero-text {
+        font-size: 16px;
+        line-height: 1.7;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-badge {
+        font-size: 14px;
+        padding: 8px 14px;
+    }
+
+    .hero-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+        max-width: 280px;
+    }
+
+    .hero-card {
+        padding: 23px;
+        border-radius: 23px;
+        margin-top: 30px;
+    }
+
+    .hero-card-icon {
+        width: 58px;
+        height: 58px;
+        font-size: 26px;
+    }
+
+
+    /* SECTIONS */
+
+    .section-padding {
+        padding: 60px 0;
+    }
+
+    .section-title {
+        font-size: 30px;
+        line-height: 1.2;
+    }
+
+    .section-subtitle {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+
+    /* SERVICE CARDS */
+
+    .service-card {
+        padding: 25px 18px;
+        border-radius: 20px;
+    }
+
+    .service-icon {
+        width: 65px;
+        height: 65px;
+        font-size: 28px;
+        border-radius: 20px;
+    }
+
+
+    /* PROVIDER CARDS */
+
+    .provider-card {
+        border-radius: 20px;
+    }
+
+    .provider-top {
+        padding: 22px;
+    }
+
+    .provider-body {
+        padding: 22px;
+    }
+
+    .provider-avatar {
+        width: 70px;
+        height: 70px;
+        font-size: 32px;
+    }
+
+    .rating {
+        font-size: 14px;
+        letter-spacing: 1px;
+    }
+
+
+    /* SEARCH BOX */
+
+    .search-box {
+        padding: 18px;
+        border-radius: 20px;
+    }
+
+    .search-box .form-control,
+    .search-box .form-select,
+    .search-box .btn {
+        width: 100%;
+    }
+
+
+    /* PAGE HEADER */
+
+    .page-header {
+        padding: 55px 0;
+        text-align: center;
+    }
+
+    .page-header h1 {
+        font-size: 40px;
+        line-height: 1.15;
+    }
+
+
+    /* FORMS */
+
+    .form-box {
+        padding: 23px 18px;
+        border-radius: 20px;
+    }
+
+    .form-control,
+    .form-select {
+        padding: 12px 13px;
+        font-size: 15px;
+    }
+
+    .form-box .btn {
+        width: 100%;
+    }
+
+
+    /* PROFILE */
+
+    .profile-box {
+        padding: 25px 18px;
+        border-radius: 22px;
+    }
+
+    .profile-avatar-large {
+        width: 120px;
+        height: 120px;
+        font-size: 60px;
+    }
+
+    .info-item {
+        padding: 15px;
+    }
+
+
+    /* DASHBOARD */
+
+    .dashboard-card {
+        border-radius: 20px;
+    }
+
+    .dashboard-number {
+        font-size: 30px;
+    }
+
+    .status {
+        font-size: 12px;
+        padding: 6px 11px;
+    }
+
+
+    /* PROCESS */
+
+    .step-card {
+        padding: 20px 15px;
+    }
+
+    .step-number {
+        width: 52px;
+        height: 52px;
+        font-size: 18px;
+    }
+
+
+    /* REVIEW */
+
+    .star-choice {
+        font-size: 27px;
+        letter-spacing: 3px;
+    }
+
+
+    /* FOOTER */
+
+    footer {
+        text-align: center;
+    }
+
+    .footer-brand {
+        font-size: 22px;
+    }
+
+}
+
+
+/* ================= SMALL MOBILE ================= */
+
+@media only screen and (max-width: 575px) {
+
+    body {
+        font-size: 14px;
+    }
+
+    .container {
+        width: 90%;
+        max-width: 90%;
+    }
+
+
+    /* NAVBAR */
+
+    .navbar-brand {
+        font-size: 22px;
+    }
+
+    .navbar-toggler {
+        padding: 6px 9px;
+    }
+
+
+    /* HERO */
+
+    .hero {
+        padding: 55px 0;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+        line-height: 1.1;
+    }
+
+    .hero-text {
+        font-size: 15px;
+        line-height: 1.65;
+    }
+
+    .hero-badge {
+        font-size: 13px;
+        padding: 7px 12px;
+    }
+
+    .hero-card {
+        padding: 20px;
+        border-radius: 20px;
+    }
+
+
+    /* SECTIONS */
+
+    .section-padding {
+        padding: 50px 0;
+    }
+
+    .section-title {
+        font-size: 27px;
+    }
+
+    .section-subtitle {
+        font-size: 14px;
+    }
+
+
+    /* SERVICE CARDS */
+
+    .service-card {
+        padding: 22px 16px;
+    }
+
+    .service-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 26px;
+    }
+
+
+    /* PROVIDER */
+
+    .provider-top,
+    .provider-body {
+        padding: 19px;
+    }
+
+    .provider-avatar {
+        width: 65px;
+        height: 65px;
+        font-size: 29px;
+    }
+
+
+    /* SEARCH */
+
+    .search-box {
+        padding: 15px;
+    }
+
+
+    /* PAGE HEADER */
+
+    .page-header {
+        padding: 48px 0;
+    }
+
+    .page-header h1 {
+        font-size: 34px;
+    }
+
+
+    /* FORM */
+
+    .form-box {
+        padding: 20px 15px;
+    }
+
+
+    /* PROFILE */
+
+    .profile-box {
+        padding: 20px 15px;
+    }
+
+    .profile-avatar-large {
+        width: 105px;
+        height: 105px;
+        font-size: 52px;
+    }
+
+    .info-item {
+        padding: 13px;
+    }
+
+
+    /* REVIEW */
+
+    .star-choice {
+        font-size: 24px;
+        letter-spacing: 2px;
+    }
+
+
+    /* BUTTONS */
+
+    .btn {
+        font-size: 14px;
+    }
+
+}
+
+
+/* ================= VERY SMALL PHONES ================= */
+
+@media only screen and (max-width: 374px) {
+
+    .container {
+        width: 92%;
+        max-width: 92%;
+    }
+
+
+    /* NAVBAR */
+
+    .navbar-brand {
+        font-size: 20px;
+    }
+
+    .navbar-toggler {
+        padding: 5px 8px;
+    }
+
+
+    /* HERO */
+
+    .hero {
+        padding: 45px 0;
+    }
+
+    .hero h1 {
+        font-size: 33px;
+        letter-spacing: -0.5px;
+    }
+
+    .hero-text {
+        font-size: 14px;
+    }
+
+    .hero-card {
+        padding: 17px;
+        border-radius: 18px;
+    }
+
+
+    /* SECTION */
+
+    .section-padding {
+        padding: 45px 0;
+    }
+
+    .section-title {
+        font-size: 25px;
+    }
+
+
+    /* CARDS */
+
+    .service-card {
+        padding: 20px 14px;
+        border-radius: 18px;
+    }
+
+    .provider-card {
+        border-radius: 18px;
+    }
+
+    .provider-top,
+    .provider-body {
+        padding: 17px;
+    }
+
+
+    /* PAGE HEADER */
+
+    .page-header {
+        padding: 42px 0;
+    }
+
+    .page-header h1 {
+        font-size: 30px;
+    }
+
+
+    /* FORM */
+
+    .form-box {
+        padding: 18px 13px;
+        border-radius: 18px;
+    }
+
+
+    /* PROFILE */
+
+    .profile-box {
+        padding: 18px 13px;
+    }
+
+    .profile-avatar-large {
+        width: 90px;
+        height: 90px;
+        font-size: 45px;
+    }
+
+
+    /* BUTTONS */
+
+    .hero-buttons .btn {
+        max-width: 100%;
+    }
+
+
+    /* REVIEW */
+
+    .star-choice {
+        font-size: 21px;
+        letter-spacing: 1px;
+    }
+
+}
+
+/* =========================================================
+   BOOKING PAGE RESPONSIVE DESIGN
+   ========================================================= */
+
+
+/* ================= LAPTOP / SMALL DESKTOP ================= */
+
+@media only screen and (max-width: 1199px) {
+
+    .page-header {
+        padding: 70px 0;
+    }
+
+    .page-header h1 {
+        font-size: 48px;
+    }
+
+    .form-box {
+        padding: 35px;
+    }
+
+}
+
+
+/* ================= TABLET ================= */
+
+@media only screen and (max-width: 991px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .container {
+        max-width: 95%;
+    }
+
+
+    /* NAVBAR */
+
+    .navbar {
+        padding: 12px 0;
+    }
+
+    .navbar-brand {
+        font-size: 25px;
+    }
+
+    .navbar-nav {
+        margin-left: 0 !important;
+        margin-top: 10px;
+        padding: 10px;
+        border-radius: 15px;
+    }
+
+    .nav-link {
+        padding: 10px 14px !important;
+        border-radius: 10px;
+    }
+
+
+    /* PAGE HEADER */
+
+    .page-header {
+        padding: 65px 0;
+    }
+
+    .page-header h1 {
+        font-size: 45px;
+    }
+
+    .page-header p {
+        font-size: 16px;
+    }
+
+
+    /* BOOKING SECTION */
+
+    .section-padding {
+        padding: 65px 0;
+    }
+
+    .form-box {
+        padding: 32px;
+    }
+
+
+    /* BOOKING HEADER */
+
+    .form-box .d-flex {
+        align-items: flex-start !important;
+    }
+
+
+    /* FORM */
+
+    .form-label {
+        font-size: 15px;
+    }
+
+    .form-control,
+    .form-select {
+        min-height: 48px;
+    }
+
+    textarea.form-control {
+        min-height: 120px;
+    }
+
+
+    /* FOOTER */
+
+    footer {
+        padding: 45px 0 !important;
+    }
+
+}
+
+
+/* ================= MOBILE ================= */
+
+@media only screen and (max-width: 767px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .container {
+        width: 92%;
+        max-width: 92%;
+    }
+
+
+    /* NAVBAR */
+
+    .navbar {
+        padding: 10px 0;
+    }
+
+    .navbar-brand {
+        font-size: 23px;
+    }
+
+    .logo-dot {
+        width: 9px;
+        height: 9px;
+    }
+
+    .navbar-nav {
+        width: 100%;
+        margin-top: 12px;
+        padding: 10px;
+        background-color: #ffffff;
+        border-radius: 15px;
+        box-shadow: 0 8px 25px rgba(82, 115, 93, 0.08);
+    }
+
+    .nav-link {
+        width: 100%;
+        padding: 11px 13px !important;
+        font-size: 15px;
+    }
+
+
+    /* PAGE HEADER */
+
+    .page-header {
+        padding: 55px 0;
+    }
+
+    .page-header h1 {
+        font-size: 38px;
+        line-height: 1.15;
+    }
+
+    .page-header p {
+        font-size: 15px;
+        line-height: 1.6;
+        padding: 0 10px;
+    }
+
+
+    /* BOOKING SECTION */
+
+    .section-padding {
+        padding: 55px 0;
+    }
+
+
+    /* FORM BOX */
+
+    .form-box {
+        padding: 25px 20px;
+        border-radius: 20px;
+    }
+
+
+    /* BOOKING DETAILS HEADER */
+
+    .form-box .d-flex {
+        flex-direction: column;
+        align-items: flex-start !important;
+        gap: 15px !important;
+    }
+
+    .form-box h3 {
+        font-size: 23px;
+    }
+
+    .form-box .text-muted {
+        font-size: 14px;
+    }
+
+
+    /* BOOKING ID */
+
+    .badge {
+        font-size: 12px;
+        padding: 9px 13px !important;
+        max-width: 100%;
+        white-space: normal;
+    }
+
+
+    /* FORM SPACING */
+
+    .mb-4 {
+        margin-bottom: 1.25rem !important;
+    }
+
+
+    /* FORM INPUTS */
+
+    .form-label {
+        font-size: 14px;
+        margin-bottom: 7px;
+    }
+
+    .form-control,
+    .form-select {
+        width: 100%;
+        min-height: 48px;
+        font-size: 14px;
+        padding: 11px 13px;
+    }
+
+    textarea.form-control {
+        min-height: 120px;
+    }
+
+
+    /* DATE + TIME */
+
+    .row.g-3 {
+        --bs-gutter-y: 1rem;
+    }
+
+
+    /* NOTE */
+
+    .alert {
+        font-size: 14px;
+        line-height: 1.6;
+        padding: 14px;
+    }
+
+
+    /* SUBMIT BUTTON */
+
+    .form-box button[type="submit"] {
+        width: 100%;
+        min-height: 52px;
+        font-size: 15px;
+        padding: 13px !important;
+    }
+
+
+    /* FOOTER */
+
+    footer {
+        padding: 40px 0 !important;
+        text-align: center;
+    }
+
+    .footer-brand {
+        font-size: 22px;
+    }
+
+}
+
+
+/* ================= SMALL MOBILE ================= */
+
+@media only screen and (max-width: 575px) {
+
+    .container {
+        width: 90%;
+        max-width: 90%;
+    }
+
+
+    /* NAVBAR */
+
+    .navbar-brand {
+        font-size: 21px;
+    }
+
+    .nav-link {
+        font-size: 14px;
+    }
+
+
+    /* PAGE HEADER */
+
+    .page-header {
+        padding: 48px 0;
+    }
+
+    .page-header h1 {
+        font-size: 33px;
+    }
+
+    .page-header p {
+        font-size: 14px;
+    }
+
+
+    /* SECTION */
+
+    .section-padding {
+        padding: 45px 0;
+    }
+
+
+    /* FORM */
+
+    .form-box {
+        padding: 21px 16px;
+        border-radius: 18px;
+    }
+
+    .form-box h3 {
+        font-size: 21px;
+    }
+
+
+    /* BOOKING ID */
+
+    .badge {
+        font-size: 11px;
+        padding: 8px 11px !important;
+    }
+
+
+    /* INPUTS */
+
+    .form-control,
+    .form-select {
+        min-height: 46px;
+        font-size: 14px;
+    }
+
+    textarea.form-control {
+        min-height: 110px;
+    }
+
+
+    /* ALERT */
+
+    .alert {
+        font-size: 13px;
+        padding: 12px;
+    }
+
+
+    /* BUTTON */
+
+    .form-box button[type="submit"] {
+        min-height: 50px;
+        font-size: 14px;
+    }
+
+}
+
+
+/* ================= VERY SMALL PHONES ================= */
+
+@media only screen and (max-width: 374px) {
+
+    .container {
+        width: 92%;
+        max-width: 92%;
+    }
+
+
+    /* NAVBAR */
+
+    .navbar-brand {
+        font-size: 19px;
+    }
+
+
+    /* PAGE HEADER */
+
+    .page-header {
+        padding: 40px 0;
+    }
+
+    .page-header h1 {
+        font-size: 29px;
+    }
+
+    .page-header p {
+        font-size: 13px;
+        padding: 0;
+    }
+
+
+    /* SECTION */
+
+    .section-padding {
+        padding: 40px 0;
+    }
+
+
+    /* FORM */
+
+    .form-box {
+        padding: 18px 13px;
+        border-radius: 17px;
+    }
+
+    .form-box h3 {
+        font-size: 19px;
+    }
+
+
+    /* BOOKING ID */
+
+    .badge {
+        font-size: 10px;
+        padding: 7px 9px !important;
+    }
+
+
+    /* INPUTS */
+
+    .form-control,
+    .form-select {
+        min-height: 44px;
+        font-size: 13px;
+        padding: 9px 11px;
+    }
+
+    textarea.form-control {
+        min-height: 100px;
+    }
+
+
+    /* NOTE */
+
+    .alert {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+
+    /* BUTTON */
+
+    .form-box button[type="submit"] {
+        min-height: 48px;
+        font-size: 13px;
+    }
+
+}
+
+/* =========================================================
+   CUSTOMER DASHBOARD RESPONSIVE DESIGN
+   ========================================================= */
+
+
+/* ================= LAPTOP / SMALL DESKTOP ================= */
+
+@media only screen and (max-width: 1199px) {
+
+    .page-header {
+        padding: 70px 0;
+    }
+
+    .page-header h1 {
+        font-size: 48px;
+    }
+
+    .dashboard-card {
+        padding: 25px !important;
+    }
+
+    .dashboard-number {
+        font-size: 34px;
+    }
+
+}
+
+
+/* ================= TABLET ================= */
+
+@media only screen and (max-width: 991px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .container {
+        max-width: 95%;
+    }
+
+
+    /* NAVBAR */
+
+    .navbar {
+        padding: 12px 0;
+    }
+
+    .navbar-brand {
+        font-size: 25px;
+    }
+
+    .navbar-nav {
+        margin-left: 0 !important;
+        margin-top: 10px;
+        padding: 10px;
+        border-radius: 15px;
+    }
+
+    .nav-link {
+        padding: 10px 14px !important;
+        border-radius: 10px;
+    }
+
+
+    /* PAGE HEADER */
+
+    .page-header {
+        padding: 65px 0;
+    }
+
+    .page-header h1 {
+        font-size: 45px;
+    }
+
+
+    /* SECTION */
+
+    .section-padding {
+        padding: 65px 0;
+    }
+
+
+    /* STAT CARDS */
+
+    .dashboard-card {
+        padding: 23px !important;
+        height: 100%;
+    }
+
+    .dashboard-number {
+        font-size: 32px;
+    }
+
+
+    /* BOOKING HEADING */
+
+    .section-padding .d-flex {
+        gap: 15px;
+    }
+
+
+    /* BOOKING CARDS */
+
+    .dashboard-card h5 {
+        font-size: 18px;
+    }
+
+    .dashboard-card p {
+        font-size: 14px;
+    }
+
+}
+
+
+/* ================= MOBILE ================= */
+
+@media only screen and (max-width: 767px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .container {
+        width: 92%;
+        max-width: 92%;
+    }
+
+
+    /* NAVBAR */
+
+    .navbar {
+        padding: 10px 0;
+    }
+
+    .navbar-brand {
+        font-size: 23px;
+    }
+
+    .logo-dot {
+        width: 9px;
+        height: 9px;
+    }
+
+    .navbar-nav {
+        width: 100%;
+        margin-top: 12px;
+        padding: 10px;
+        background-color: #ffffff;
+        border-radius: 15px;
+        box-shadow: 0 8px 25px rgba(82, 115, 93, 0.08);
+    }
+
+    .nav-link {
+        width: 100%;
+        padding: 11px 13px !important;
+        font-size: 15px;
+    }
+
+
+    /* PAGE HEADER */
+
+    .page-header {
+        padding: 55px 0;
+        text-align: center;
+    }
+
+    .page-header h1 {
+        font-size: 38px;
+        line-height: 1.15;
+    }
+
+    .page-header p {
+        font-size: 15px;
+    }
+
+
+    /* SECTION */
+
+    .section-padding {
+        padding: 55px 0;
+    }
+
+
+    /* STAT CARDS */
+
+    .row.g-4.mb-5 {
+        margin-bottom: 40px !important;
+    }
+
+    .dashboard-card {
+        padding: 20px !important;
+        border-radius: 20px;
+    }
+
+    .dashboard-number {
+        font-size: 29px;
+        margin-top: 4px;
+    }
+
+    .dashboard-card small {
+        font-size: 12px;
+    }
+
+
+    /* MY BOOKINGS HEADER */
+
+    .section-padding .d-flex.justify-content-between {
+        align-items: flex-start !important;
+    }
+
+    .section-padding .d-flex.justify-content-between h3 {
+        font-size: 24px;
+    }
+
+    .section-padding .d-flex.justify-content-between .btn {
+        width: 100%;
+        max-width: 180px;
+    }
+
+
+    /* BOOKING CARDS */
+
+    .dashboard-card h5 {
+        font-size: 17px;
+    }
+
+    .dashboard-card p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+
+    /* BOOKING STATUS */
+
+    .status {
+        font-size: 11px;
+        padding: 6px 10px;
+        white-space: nowrap;
+    }
+
+
+    /* BOOKING TOP AREA */
+
+    .dashboard-card .d-flex.justify-content-between {
+        gap: 10px !important;
+    }
+
+
+    /* BUTTONS */
+
+    .dashboard-card .btn {
+        font-size: 13px;
+    }
+
+
+    /* FOOTER */
+
+    footer {
+        padding: 40px 0 !important;
+        text-align: center;
+    }
+
+    .footer-brand {
+        font-size: 22px;
+    }
+
+}
+
+
+/* ================= SMALL MOBILE ================= */
+
+@media only screen and (max-width: 575px) {
+
+    .container {
+        width: 90%;
+        max-width: 90%;
+    }
+
+
+    /* NAVBAR */
+
+    .navbar-brand {
+        font-size: 21px;
+    }
+
+    .nav-link {
+        font-size: 14px;
+    }
+
+
+    /* PAGE HEADER */
+
+    .page-header {
+        padding: 48px 0;
+    }
+
+    .page-header h1 {
+        font-size: 33px;
+    }
+
+    .page-header p {
+        font-size: 14px;
+    }
+
+
+    /* SECTION */
+
+    .section-padding {
+        padding: 45px 0;
+    }
+
+
+    /* STAT CARDS */
+
+    .dashboard-card {
+        padding: 17px !important;
+        border-radius: 18px;
+    }
+
+    .dashboard-number {
+        font-size: 27px;
+    }
+
+    .dashboard-card small {
+        font-size: 11px;
+    }
+
+
+    /* BOOKINGS HEADING */
+
+    .section-padding .d-flex.justify-content-between {
+        flex-direction: column;
+        align-items: flex-start !important;
+    }
+
+    .section-padding .d-flex.justify-content-between h3 {
+        font-size: 22px;
+    }
+
+    .section-padding .d-flex.justify-content-between .btn {
+        width: 100%;
+        max-width: 100%;
+    }
+
+
+    /* BOOKING CARDS */
+
+    .dashboard-card h5 {
+        font-size: 16px;
+    }
+
+    .dashboard-card p {
+        font-size: 13px;
+    }
+
+    .status {
+        font-size: 10px;
+        padding: 5px 8px;
+    }
+
+
+    /* BUTTONS */
+
+    .dashboard-card .btn {
+        width: 100%;
+        font-size: 13px;
+    }
+
+}
+
+
+/* ================= VERY SMALL PHONES ================= */
+
+@media only screen and (max-width: 374px) {
+
+    .container {
+        width: 92%;
+        max-width: 92%;
+    }
+
+
+    /* NAVBAR */
+
+    .navbar-brand {
+        font-size: 19px;
+    }
+
+
+    /* PAGE HEADER */
+
+    .page-header {
+        padding: 40px 0;
+    }
+
+    .page-header h1 {
+        font-size: 29px;
+    }
+
+    .page-header p {
+        font-size: 13px;
+    }
+
+
+    /* SECTION */
+
+    .section-padding {
+        padding: 40px 0;
+    }
+
+
+    /* STAT CARDS */
+
+    .dashboard-card {
+        padding: 14px !important;
+        border-radius: 16px;
+    }
+
+    .dashboard-number {
+        font-size: 24px;
+    }
+
+    .dashboard-card small {
+        font-size: 10px;
+    }
+
+
+    /* BOOKING HEADING */
+
+    .section-padding .d-flex.justify-content-between h3 {
+        font-size: 20px;
+    }
+
+
+    /* BOOKING CARDS */
+
+    .dashboard-card h5 {
+        font-size: 15px;
+    }
+
+    .dashboard-card p {
+        font-size: 12px;
+    }
+
+    .dashboard-card small {
+        font-size: 10px;
+    }
+
+
+    /* STATUS */
+
+    .status {
+        font-size: 9px;
+        padding: 4px 7px;
+    }
+
+
+    /* BOOKING ID */
+
+    .dashboard-card hr {
+        margin: 12px 0;
+    }
+
+
+    /* BUTTON */
+
+    .dashboard-card .btn {
+        font-size: 12px;
+        padding: 9px 10px;
+    }
+
+}
+
+/* =========================================================
+   LOGIN PAGE RESPONSIVE DESIGN
+   ========================================================= */
+
+
+/* ================= LAPTOP / SMALL DESKTOP ================= */
+
+@media only screen and (max-width: 1199px) {
+
+    .section-padding {
+        padding: 70px 0;
+    }
+
+    .form-box {
+        padding: 35px;
+    }
+
+}
+
+
+/* ================= TABLET ================= */
+
+@media only screen and (max-width: 991px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .container {
+        max-width: 95%;
+    }
+
+
+    /* NAVBAR */
+
+    .navbar {
+        padding: 12px 0;
+    }
+
+    .navbar-brand {
+        font-size: 25px;
+    }
+
+    .navbar .btn {
+        font-size: 14px;
+        padding: 9px 16px;
+    }
+
+
+    /* LOGIN SECTION */
+
+    .section-padding {
+        padding: 65px 0;
+    }
+
+    .form-box {
+        padding: 32px;
+    }
+
+
+    /* LOGIN ICON */
+
+    .service-icon {
+        width: 70px;
+        height: 70px;
+        font-size: 30px;
+    }
+
+
+    /* HEADING */
+
+    .form-box h2 {
+        font-size: 30px;
+    }
+
+}
+
+
+/* ================= MOBILE ================= */
+
+@media only screen and (max-width: 767px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .container {
+        width: 92%;
+        max-width: 92%;
+    }
+
+
+    /* NAVBAR */
+
+    .navbar {
+        padding: 10px 0;
+    }
+
+    .navbar-brand {
+        font-size: 23px;
+    }
+
+    .logo-dot {
+        width: 9px;
+        height: 9px;
+    }
+
+    .navbar .container {
+        gap: 15px;
+    }
+
+    .navbar .btn {
+        font-size: 13px;
+        padding: 8px 13px;
+        white-space: nowrap;
+    }
+
+
+    /* LOGIN SECTION */
+
+    .section-padding {
+        padding: 55px 0;
+    }
+
+
+    /* LOGIN BOX */
+
+    .form-box {
+        width: 100%;
+        padding: 25px 20px;
+        border-radius: 20px;
+    }
+
+
+    /* LOGIN HEADER */
+
+    .service-icon {
+        width: 65px;
+        height: 65px;
+        font-size: 28px;
+    }
+
+    .form-box h2 {
+        font-size: 27px;
+        line-height: 1.2;
+    }
+
+    .form-box .text-muted {
+        font-size: 14px;
+    }
+
+
+    /* FORM */
+
+    .form-label {
+        font-size: 14px;
+    }
+
+    .form-control {
+        min-height: 48px;
+        font-size: 14px;
+        padding: 11px 13px;
+    }
+
+
+    /* REMEMBER / FORGOT PASSWORD */
+
+    .form-box form .d-flex {
+        gap: 12px;
+        align-items: flex-start !important;
+    }
+
+    .form-check-label,
+    .form-box form a.small {
+        font-size: 12px !important;
+    }
+
+
+    /* LOGIN BUTTON */
+
+    .form-box button[type="submit"] {
+        width: 100%;
+        min-height: 51px;
+        font-size: 15px;
+        padding: 12px !important;
+    }
+
+
+    /* CREATE ACCOUNT */
+
+    .form-box > p:last-child {
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+
+    /* FOOTER */
+
+    footer {
+        padding: 35px 0 !important;
+    }
+
+}
+
+
+/* ================= SMALL MOBILE ================= */
+
+@media only screen and (max-width: 575px) {
+
+    .container {
+        width: 90%;
+        max-width: 90%;
+    }
+
+
+    /* NAVBAR */
+
+    .navbar-brand {
+        font-size: 21px;
+    }
+
+    .navbar .btn {
+        font-size: 12px;
+        padding: 7px 11px;
+    }
+
+
+    /* LOGIN SECTION */
+
+    .section-padding {
+        padding: 45px 0;
+    }
+
+
+    /* FORM BOX */
+
+    .form-box {
+        padding: 22px 16px;
+        border-radius: 18px;
+    }
+
+
+    /* ICON */
+
+    .service-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 26px;
+    }
+
+
+    /* HEADING */
+
+    .form-box h2 {
+        font-size: 24px;
+    }
+
+    .form-box .text-muted {
+        font-size: 13px;
+    }
+
+
+    /* FORM */
+
+    .form-label {
+        font-size: 13px;
+    }
+
+    .form-control {
+        min-height: 46px;
+        font-size: 13px;
+    }
+
+
+    /* REMEMBER */
+
+    .form-box form .d-flex {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .form-check-label,
+    .form-box form a.small {
+        font-size: 11px !important;
+    }
+
+
+    /* BUTTON */
+
+    .form-box button[type="submit"] {
+        min-height: 49px;
+        font-size: 14px;
+    }
+
+
+    /* CREATE ACCOUNT */
+
+    .form-box > p:last-child {
+        font-size: 12px;
+    }
+
+}
+
+
+/* ================= VERY SMALL PHONES ================= */
+
+@media only screen and (max-width: 374px) {
+
+    .container {
+        width: 92%;
+        max-width: 92%;
+    }
+
+
+    /* NAVBAR */
+
+    .navbar-brand {
+        font-size: 19px;
+    }
+
+    .navbar .container {
+        gap: 8px;
+    }
+
+    .navbar .btn {
+        font-size: 11px;
+        padding: 6px 9px;
+    }
+
+
+    /* LOGIN SECTION */
+
+    .section-padding {
+        padding: 40px 0;
+    }
+
+
+    /* FORM BOX */
+
+    .form-box {
+        padding: 19px 13px;
+        border-radius: 17px;
+    }
+
+
+    /* ICON */
+
+    .service-icon {
+        width: 55px;
+        height: 55px;
+        font-size: 24px;
+    }
+
+
+    /* HEADING */
+
+    .form-box h2 {
+        font-size: 22px;
+    }
+
+    .form-box .text-muted {
+        font-size: 12px;
+    }
+
+
+    /* FORM */
+
+    .form-label {
+        font-size: 12px;
+    }
+
+    .form-control {
+        min-height: 44px;
+        font-size: 12px;
+        padding: 9px 11px;
+    }
+
+
+    /* REMEMBER / FORGOT */
+
+    .form-check-label,
+    .form-box form a.small {
+        font-size: 10px !important;
+    }
+
+
+    /* LOGIN BUTTON */
+
+    .form-box button[type="submit"] {
+        min-height: 47px;
+        font-size: 13px;
+    }
+
+
+    /* CREATE ACCOUNT */
+
+    .form-box > p:last-child {
+        font-size: 11px;
+    }
+
+
+    /* FOOTER */
+
+    footer {
+        padding: 30px 0 !important;
+    }
+
+}
+
+/* =========================================================
+   PROVIDER DASHBOARD RESPONSIVE DESIGN
+   ========================================================= */
+
+
+/* ================= LAPTOP / SMALL DESKTOP ================= */
+
+@media only screen and (max-width: 1199px) {
+
+    .page-header {
+        padding: 70px 0;
+    }
+
+    .page-header h1 {
+        font-size: 48px;
+    }
+
+    .dashboard-card {
+        padding: 25px !important;
+    }
+
+    .dashboard-number {
+        font-size: 34px;
+    }
+
+}
+
+
+/* ================= TABLET ================= */
+
+@media only screen and (max-width: 991px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .container {
+        max-width: 95%;
+    }
+
+
+    /* NAVBAR */
+
+    .navbar {
+        padding: 12px 0;
+    }
+
+    .navbar-brand {
+        font-size: 25px;
+    }
+
+    .navbar-nav {
+        margin-left: 0 !important;
+        margin-top: 10px;
+        padding: 10px;
+        border-radius: 15px;
+    }
+
+    .nav-link {
+        padding: 10px 14px !important;
+        border-radius: 10px;
+    }
+
+
+    /* PAGE HEADER */
+
+    .page-header {
+        padding: 65px 0;
+    }
+
+    .page-header h1 {
+        font-size: 45px;
+    }
+
+    .page-header p {
+        font-size: 16px;
+    }
+
+
+    /* SECTION */
+
+    .section-padding {
+        padding: 65px 0;
+    }
+
+
+    /* STAT CARDS */
+
+    .dashboard-card {
+        padding: 23px !important;
+        height: 100%;
+    }
+
+    .dashboard-number {
+        font-size: 32px;
+    }
+
+
+    /* BOOKING CARDS */
+
+    .dashboard-card h5 {
+        font-size: 18px;
+    }
+
+    .dashboard-card p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+
+    /* DESCRIPTION */
+
+    .dashboard-card .alert {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+}
+
+
+/* ================= MOBILE ================= */
+
+@media only screen and (max-width: 767px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .container {
+        width: 92%;
+        max-width: 92%;
+    }
+
+
+    /* NAVBAR */
+
+    .navbar {
+        padding: 10px 0;
+    }
+
+    .navbar-brand {
+        font-size: 23px;
+    }
+
+    .logo-dot {
+        width: 9px;
+        height: 9px;
+    }
+
+    .navbar-nav {
+        width: 100%;
+        margin-top: 12px;
+        padding: 10px;
+        background-color: #ffffff;
+        border-radius: 15px;
+        box-shadow: 0 8px 25px rgba(82, 115, 93, 0.08);
+    }
+
+    .nav-link {
+        width: 100%;
+        padding: 11px 13px !important;
+        font-size: 15px;
+    }
+
+
+    /* PAGE HEADER */
+
+    .page-header {
+        padding: 55px 0;
+        text-align: center;
+    }
+
+    .page-header h1 {
+        font-size: 38px;
+        line-height: 1.15;
+    }
+
+    .page-header p {
+        font-size: 15px;
+    }
+
+
+    /* SECTION */
+
+    .section-padding {
+        padding: 55px 0;
+    }
+
+
+    /* STAT CARDS */
+
+    .row.g-4.mb-5 {
+        margin-bottom: 40px !important;
+    }
+
+    .dashboard-card {
+        padding: 20px !important;
+        border-radius: 20px;
+    }
+
+    .dashboard-number {
+        font-size: 29px;
+        margin-top: 4px;
+    }
+
+    .dashboard-card small {
+        font-size: 12px;
+    }
+
+
+    /* INCOMING BOOKINGS */
+
+    .section-padding h3 {
+        font-size: 24px;
+        line-height: 1.3;
+    }
+
+
+    /* BOOKING CARDS */
+
+    .dashboard-card h5 {
+        font-size: 17px;
+    }
+
+    .dashboard-card p {
+        font-size: 14px;
+        line-height: 1.5;
+        margin-bottom: 10px;
+    }
+
+
+    /* BOOKING TOP */
+
+    .dashboard-card .d-flex.justify-content-between {
+        align-items: flex-start;
+        gap: 10px !important;
+    }
+
+
+    /* STATUS */
+
+    .status {
+        font-size: 11px;
+        padding: 6px 10px;
+        white-space: nowrap;
+    }
+
+
+    /* DESCRIPTION */
+
+    .dashboard-card .alert {
+        font-size: 13px;
+        line-height: 1.6;
+        padding: 13px;
+        margin-top: 15px;
+    }
+
+
+    /* BUTTONS */
+
+    .dashboard-card .btn {
+        font-size: 13px;
+        padding: 10px 12px;
+    }
+
+
+    /* ACCEPT / REJECT */
+
+    .dashboard-card .d-flex.gap-2 {
+        flex-wrap: nowrap;
+    }
+
+
+    /* FOOTER */
+
+    footer {
+        padding: 40px 0 !important;
+        text-align: center;
+    }
+
+    .footer-brand {
+        font-size: 22px;
+    }
+
+}
+
+
+/* ================= SMALL MOBILE ================= */
+
+@media only screen and (max-width: 575px) {
+
+    .container {
+        width: 90%;
+        max-width: 90%;
+    }
+
+
+    /* NAVBAR */
+
+    .navbar-brand {
+        font-size: 21px;
+    }
+
+    .nav-link {
+        font-size: 14px;
+    }
+
+
+    /* PAGE HEADER */
+
+    .page-header {
+        padding: 48px 0;
+    }
+
+    .page-header h1 {
+        font-size: 33px;
+    }
+
+    .page-header p {
+        font-size: 14px;
+    }
+
+
+    /* SECTION */
+
+    .section-padding {
+        padding: 45px 0;
+    }
+
+
+    /* STAT CARDS */
+
+    .dashboard-card {
+        padding: 17px !important;
+        border-radius: 18px;
+    }
+
+    .dashboard-number {
+        font-size: 27px;
+    }
+
+    .dashboard-card small {
+        font-size: 11px;
+    }
+
+
+    /* HEADING */
+
+    .section-padding h3 {
+        font-size: 22px;
+    }
+
+
+    /* BOOKING CARDS */
+
+    .dashboard-card h5 {
+        font-size: 16px;
+    }
+
+    .dashboard-card p {
+        font-size: 13px;
+    }
+
+
+    /* STATUS */
+
+    .status {
+        font-size: 10px;
+        padding: 5px 8px;
+    }
+
+
+    /* DESCRIPTION */
+
+    .dashboard-card .alert {
+        font-size: 12px;
+        padding: 11px;
+    }
+
+
+    /* ACCEPT / REJECT BUTTONS */
+
+    .dashboard-card .d-flex.gap-2 {
+        flex-direction: column;
+        gap: 8px !important;
+    }
+
+    .dashboard-card .d-flex.gap-2 .btn {
+        width: 100%;
+    }
+
+
+    /* OTHER BUTTONS */
+
+    .dashboard-card > .btn {
+        width: 100%;
+    }
+
+}
+
+
+/* ================= VERY SMALL PHONES ================= */
+
+@media only screen and (max-width: 374px) {
+
+    .container {
+        width: 92%;
+        max-width: 92%;
+    }
+
+
+    /* NAVBAR */
+
+    .navbar-brand {
+        font-size: 19px;
+    }
+
+
+    /* PAGE HEADER */
+
+    .page-header {
+        padding: 40px 0;
+    }
+
+    .page-header h1 {
+        font-size: 29px;
+    }
+
+    .page-header p {
+        font-size: 13px;
+    }
+
+
+    /* SECTION */
+
+    .section-padding {
+        padding: 40px 0;
+    }
+
+
+    /* STAT CARDS */
+
+    .dashboard-card {
+        padding: 14px !important;
+        border-radius: 16px;
+    }
+
+    .dashboard-number {
+        font-size: 24px;
+    }
+
+    .dashboard-card small {
+        font-size: 10px;
+    }
+
+
+    /* HEADING */
+
+    .section-padding h3 {
+        font-size: 20px;
+    }
+
+
+    /* BOOKING CARDS */
+
+    .dashboard-card h5 {
+        font-size: 15px;
+    }
+
+    .dashboard-card p {
+        font-size: 12px;
+        line-height: 1.45;
+    }
+
+
+    /* STATUS */
+
+    .status {
+        font-size: 9px;
+        padding: 4px 7px;
+    }
+
+
+    /* BOOKING ID */
+
+    .dashboard-card hr {
+        margin: 12px 0;
+    }
+
+
+    /* DESCRIPTION */
+
+    .dashboard-card .alert {
+        font-size: 11px;
+        padding: 9px;
+    }
+
+
+    /* BUTTONS */
+
+    .dashboard-card .btn {
+        font-size: 12px;
+        padding: 8px 10px;
+    }
+
+}
+
+/* =========================================================
+   PROVIDER PROFILE RESPONSIVE DESIGN
+   ========================================================= */
+
+
+/* ================= LAPTOP / SMALL DESKTOP ================= */
+
+@media only screen and (max-width: 1199px) {
+
+    .page-header {
+        padding: 70px 0;
+    }
+
+    .page-header h1 {
+        font-size: 48px;
+    }
+
+    .profile-box {
+        padding: 35px;
+    }
+
+    .profile-avatar-large {
+        width: 145px;
+        height: 145px;
+        font-size: 70px;
+    }
+
+}
+
+
+/* ================= TABLET ================= */
+
+@media only screen and (max-width: 991px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .container {
+        max-width: 95%;
+    }
+
+
+    /* NAVBAR */
+
+    .navbar {
+        padding: 12px 0;
+    }
+
+    .navbar-brand {
+        font-size: 25px;
+    }
+
+    .navbar-collapse {
+        margin-top: 10px;
+        padding: 10px;
+        background-color: #ffffff;
+        border-radius: 15px;
+    }
+
+    .navbar-nav {
+        margin-left: 0 !important;
+    }
+
+    .nav-link {
+        padding: 10px 14px !important;
+        border-radius: 10px;
+    }
+
+
+    /* PAGE HEADER */
+
+    .page-header {
+        padding: 65px 0;
+    }
+
+    .page-header h1 {
+        font-size: 45px;
+    }
+
+
+    /* SECTION */
+
+    .section-padding {
+        padding: 65px 0;
+    }
+
+
+    /* PROFILE */
+
+    .profile-box {
+        padding: 32px;
+        border-radius: 22px;
+    }
+
+    .profile-avatar-large {
+        width: 135px;
+        height: 135px;
+        font-size: 65px;
+    }
+
+    .profile-box h2 {
+        font-size: 32px;
+    }
+
+    .profile-box .fs-5 {
+        font-size: 17px !important;
+    }
+
+
+    /* PROFILE BUTTON */
+
+    .profile-box .btn-lg {
+        font-size: 15px;
+        padding: 11px 20px !important;
+    }
+
+
+    /* INFO ITEMS */
+
+    .info-item {
+        height: 100%;
+        padding: 18px;
+    }
+
+    .info-item strong {
+        font-size: 15px;
+    }
+
+
+    /* REVIEWS */
+
+    .mt-5 h3 {
+        font-size: 28px;
+    }
+
+}
+
+
+/* ================= MOBILE ================= */
+
+@media only screen and (max-width: 767px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .container {
+        width: 92%;
+        max-width: 92%;
+    }
+
+
+    /* NAVBAR */
+
+    .navbar {
+        padding: 10px 0;
+    }
+
+    .navbar-brand {
+        font-size: 23px;
+    }
+
+    .logo-dot {
+        width: 9px;
+        height: 9px;
+    }
+
+    .navbar-collapse {
+        margin-top: 10px;
+        padding: 10px;
+        border-radius: 15px;
+        box-shadow: 0 8px 25px rgba(82, 115, 93, 0.08);
+    }
+
+    .nav-link {
+        width: 100%;
+        padding: 11px 13px !important;
+        font-size: 15px;
+    }
+
+
+    /* PAGE HEADER */
+
+    .page-header {
+        padding: 55px 0;
+        text-align: center;
+    }
+
+    .page-header h1 {
+        font-size: 38px;
+        line-height: 1.15;
+    }
+
+    .page-header a {
+        font-size: 14px;
+    }
+
+
+    /* SECTION */
+
+    .section-padding {
+        padding: 55px 0;
+    }
+
+
+    /* PROFILE BOX */
+
+    .profile-box {
+        padding: 25px 20px;
+        border-radius: 20px;
+    }
+
+
+    /* PROFILE TOP */
+
+    .profile-box .row.align-items-center {
+        text-align: center;
+    }
+
+    .profile-avatar-large {
+        width: 115px;
+        height: 115px;
+        font-size: 56px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    /* PROFILE INFORMATION */
+
+    .profile-box h2 {
+        font-size: 28px;
+        line-height: 1.2;
+    }
+
+    .profile-box .fs-5 {
+        font-size: 16px !important;
+    }
+
+    .profile-box p.text-muted {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+
+    /* RATING */
+
+    .rating {
+        font-size: 16px !important;
+    }
+
+    .profile-box .rating + strong {
+        font-size: 15px;
+    }
+
+
+    /* REQUEST BUTTON */
+
+    .profile-box .btn-lg {
+        width: 100%;
+        font-size: 14px;
+        padding: 12px 18px !important;
+    }
+
+
+    /* DIVIDER */
+
+    .profile-box hr {
+        margin-top: 35px !important;
+        margin-bottom: 35px !important;
+    }
+
+
+    /* INFO ITEMS */
+
+    .info-item {
+        padding: 16px 13px;
+        min-height: 85px;
+        border-radius: 15px;
+    }
+
+    .info-item small {
+        font-size: 11px;
+    }
+
+    .info-item strong {
+        font-size: 13px;
+        line-height: 1.4;
+    }
+
+
+    /* REVIEWS */
+
+    .mt-5 {
+        margin-top: 45px !important;
+    }
+
+    .mt-5 h3 {
+        font-size: 25px;
+    }
+
+    .dashboard-card {
+        padding: 20px !important;
+        border-radius: 19px;
+    }
+
+    .dashboard-card p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .dashboard-card small {
+        font-size: 12px;
+    }
+
+
+    /* FOOTER */
+
+    footer {
+        padding: 40px 0 !important;
+        text-align: center;
+    }
+
+    .footer-brand {
+        font-size: 22px;
+    }
+
+}
+
+
+/* ================= SMALL MOBILE ================= */
+
+@media only screen and (max-width: 575px) {
+
+    .container {
+        width: 90%;
+        max-width: 90%;
+    }
+
+
+    /* NAVBAR */
+
+    .navbar-brand {
+        font-size: 21px;
+    }
+
+    .nav-link {
+        font-size: 14px;
+    }
+
+
+    /* PAGE HEADER */
+
+    .page-header {
+        padding: 48px 0;
+    }
+
+    .page-header h1 {
+        font-size: 33px;
+    }
+
+    .page-header a {
+        font-size: 13px;
+    }
+
+
+    /* SECTION */
+
+    .section-padding {
+        padding: 45px 0;
+    }
+
+
+    /* PROFILE */
+
+    .profile-box {
+        padding: 21px 16px;
+        border-radius: 18px;
+    }
+
+    .profile-avatar-large {
+        width: 100px;
+        height: 100px;
+        font-size: 48px;
+    }
+
+    .profile-box h2 {
+        font-size: 24px;
+    }
+
+    .profile-box .fs-5 {
+        font-size: 14px !important;
+    }
+
+    .profile-box p.text-muted {
+        font-size: 13px;
+        line-height: 1.65;
+    }
+
+
+    /* RATING */
+
+    .rating {
+        font-size: 14px !important;
+    }
+
+    .profile-box .rating + strong {
+        font-size: 14px;
+    }
+
+
+    /* VERIFIED BADGE */
+
+    .profile-box .badge {
+        font-size: 10px;
+        padding: 8px 11px !important;
+    }
+
+
+    /* BUTTON */
+
+    .profile-box .btn-lg {
+        font-size: 13px;
+        padding: 11px 14px !important;
+    }
+
+
+    /* INFO ITEMS */
+
+    .info-item {
+        padding: 13px 10px;
+        min-height: 78px;
+    }
+
+    .info-item small {
+        font-size: 10px;
+    }
+
+    .info-item strong {
+        font-size: 12px;
+    }
+
+
+    /* REVIEWS */
+
+    .mt-5 h3 {
+        font-size: 22px;
+    }
+
+    .dashboard-card {
+        padding: 17px !important;
+        border-radius: 17px;
+    }
+
+    .dashboard-card p {
+        font-size: 13px;
+    }
+
+    .dashboard-card small {
+        font-size: 11px;
+    }
+
+}
+
+
+/* ================= VERY SMALL PHONES ================= */
+
+@media only screen and (max-width: 374px) {
+
+    .container {
+        width: 92%;
+        max-width: 92%;
+    }
+
+
+    /* NAVBAR */
+
+    .navbar-brand {
+        font-size: 19px;
+    }
+
+
+    /* PAGE HEADER */
+
+    .page-header {
+        padding: 40px 0;
+    }
+
+    .page-header h1 {
+        font-size: 29px;
+    }
+
+    .page-header a {
+        font-size: 12px;
+    }
+
+
+    /* SECTION */
+
+    .section-padding {
+        padding: 40px 0;
+    }
+
+
+    /* PROFILE */
+
+    .profile-box {
+        padding: 18px 13px;
+        border-radius: 17px;
+    }
+
+    .profile-avatar-large {
+        width: 90px;
+        height: 90px;
+        font-size: 43px;
+    }
+
+    .profile-box h2 {
+        font-size: 21px;
+    }
+
+    .profile-box .fs-5 {
+        font-size: 13px !important;
+    }
+
+    .profile-box p.text-muted {
+        font-size: 12px;
+    }
+
+
+    /* RATING */
+
+    .rating {
+        font-size: 12px !important;
+    }
+
+    .profile-box .rating + strong {
+        font-size: 12px;
+    }
+
+    .profile-box .text-muted {
+        font-size: 11px;
+    }
+
+
+    /* BADGE */
+
+    .profile-box .badge {
+        font-size: 9px;
+        padding: 7px 9px !important;
+    }
+
+
+    /* BUTTON */
+
+    .profile-box .btn-lg {
+        font-size: 12px;
+        padding: 10px 12px !important;
+    }
+
+
+    /* DIVIDER */
+
+    .profile-box hr {
+        margin-top: 25px !important;
+        margin-bottom: 25px !important;
+    }
+
+
+    /* INFO */
+
+    .info-item {
+        padding: 11px 8px;
+        min-height: 72px;
+    }
+
+    .info-item small {
+        font-size: 9px;
+    }
+
+    .info-item strong {
+        font-size: 10px;
+    }
+
+
+    /* REVIEWS */
+
+    .mt-5 {
+        margin-top: 35px !important;
+    }
+
+    .mt-5 h3 {
+        font-size: 20px;
+    }
+
+    .dashboard-card {
+        padding: 14px !important;
+    }
+
+    .dashboard-card p {
+        font-size: 12px;
+    }
+
+    .dashboard-card small {
+        font-size: 10px;
+    }
+
+}
+
+/* =========================================================
+   PROVIDERS PAGE - FULL RESPONSIVE DESIGN
+   ========================================================= */
+
+
+/* ================= LARGE LAPTOP ================= */
+
+@media only screen and (max-width: 1199px) {
+
+    .page-header {
+        padding: 65px 0;
+    }
+
+    .page-header h1 {
+        font-size: 46px;
+    }
+
+    .search-box {
+        padding: 28px;
+    }
+
+    .provider-body {
+        padding: 22px;
+    }
+
+    .provider-body h5 {
+        font-size: 18px;
+    }
+
+}
+
+
+/* ================= TABLET ================= */
+
+@media only screen and (max-width: 991px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .container {
+        max-width: 95%;
+    }
+
+
+    /* NAVBAR */
+
+    .navbar {
+        padding: 12px 0;
+    }
+
+    .navbar-brand {
+        font-size: 25px;
+    }
+
+    .navbar-collapse {
+        margin-top: 12px;
+        padding: 10px;
+        background-color: #ffffff;
+        border-radius: 16px;
+    }
+
+    .navbar-nav {
+        margin-left: 0 !important;
+    }
+
+    .nav-link {
+        padding: 10px 14px !important;
+        border-radius: 10px;
+    }
+
+    .navbar-nav .btn {
+        margin-top: 6px;
+        display: inline-block;
+    }
+
+
+    /* PAGE HEADER */
+
+    .page-header {
+        padding: 60px 0;
+    }
+
+    .page-header h1 {
+        font-size: 42px;
+        line-height: 1.2;
+    }
+
+    .page-header p {
+        font-size: 15px;
+    }
+
+
+    /* SECTION */
+
+    .section-padding {
+        padding: 60px 0;
+    }
+
+
+    /* SEARCH BOX */
+
+    .search-box {
+        padding: 25px;
+        border-radius: 20px;
+    }
+
+    .search-box .form-label {
+        font-size: 14px;
+    }
+
+    .search-box .form-control,
+    .search-box .form-select {
+        min-height: 46px;
+    }
+
+
+    /* PROVIDER CARDS */
+
+    .provider-card {
+        height: 100%;
+    }
+
+    .provider-top {
+        min-height: 155px;
+    }
+
+    .provider-avatar {
+        font-size: 48px;
+    }
+
+    .provider-body {
+        padding: 21px;
+    }
+
+    .provider-body h5 {
+        font-size: 17px;
+    }
+
+    .provider-body p {
+        line-height: 1.5;
+    }
+
+    .provider-body .btn {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+}
+
+
+/* ================= MOBILE ================= */
+
+@media only screen and (max-width: 767px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .container {
+        width: 92%;
+        max-width: 92%;
+    }
+
+
+    /* NAVBAR */
+
+    .navbar {
+        padding: 10px 0;
+    }
+
+    .navbar-brand {
+        font-size: 23px;
+    }
+
+    .logo-dot {
+        width: 9px;
+        height: 9px;
+    }
+
+    .navbar-collapse {
+        margin-top: 10px;
+        padding: 10px;
+        border-radius: 15px;
+        box-shadow: 0 8px 25px rgba(82, 115, 93, 0.08);
+    }
+
+    .nav-link {
+        width: 100%;
+        padding: 11px 13px !important;
+        font-size: 15px;
+    }
+
+    .navbar-nav .btn {
+        width: 100%;
+        margin-top: 7px;
+    }
+
+
+    /* PAGE HEADER */
+
+    .page-header {
+        padding: 52px 0;
+        text-align: center;
+    }
+
+    .page-header h1 {
+        font-size: 36px;
+        line-height: 1.15;
+    }
+
+    .page-header p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+
+    /* SECTION */
+
+    .section-padding {
+        padding: 50px 0;
+    }
+
+
+    /* SEARCH BOX */
+
+    .search-box {
+        padding: 20px;
+        border-radius: 18px;
+        margin-bottom: 35px !important;
+    }
+
+    .search-box .row {
+        row-gap: 15px;
+    }
+
+    .search-box .form-label {
+        font-size: 13px;
+        margin-bottom: 6px;
+    }
+
+    .search-box .form-control,
+    .search-box .form-select {
+        min-height: 45px;
+        font-size: 14px;
+    }
+
+    .search-box .btn {
+        min-height: 45px;
+        font-size: 14px;
+    }
+
+    .search-box p {
+        font-size: 12px;
+        line-height: 1.6;
+    }
+
+
+    /* PROVIDER CARDS */
+
+    .provider-card {
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+
+    .provider-top {
+        min-height: 145px;
+        padding: 20px;
+    }
+
+    .provider-avatar {
+        font-size: 46px;
+    }
+
+    .provider-top .badge {
+        font-size: 10px;
+        padding: 7px 10px;
+    }
+
+    .provider-body {
+        padding: 20px;
+    }
+
+    .provider-body h5 {
+        font-size: 18px;
+        line-height: 1.3;
+    }
+
+    .provider-body p {
+        font-size: 13px;
+        line-height: 1.6;
+        margin-bottom: 9px;
+    }
+
+    .provider-body .small {
+        font-size: 12px !important;
+    }
+
+    .provider-body .rating {
+        font-size: 14px;
+    }
+
+    .provider-body .price {
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    .provider-body .btn {
+        font-size: 13px;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+
+    /* FOOTER */
+
+    footer {
+        padding: 40px 0 !important;
+        text-align: center;
+    }
+
+    .footer-brand {
+        font-size: 22px;
+    }
+
+    footer p {
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+    footer a {
+        font-size: 13px;
+    }
+
+}
+
+
+/* ================= SMALL MOBILE ================= */
+
+@media only screen and (max-width: 575px) {
+
+    .container {
+        width: 90%;
+        max-width: 90%;
+    }
+
+
+    /* NAVBAR */
+
+    .navbar-brand {
+        font-size: 21px;
+    }
+
+    .nav-link {
+        font-size: 14px;
+    }
+
+
+    /* PAGE HEADER */
+
+    .page-header {
+        padding: 45px 0;
+    }
+
+    .page-header h1 {
+        font-size: 31px;
+    }
+
+    .page-header p {
+        font-size: 13px;
+    }
+
+
+    /* SECTION */
+
+    .section-padding {
+        padding: 42px 0;
+    }
+
+
+    /* SEARCH */
+
+    .search-box {
+        padding: 17px;
+        border-radius: 17px;
+    }
+
+    .search-box .form-label {
+        font-size: 12px;
+    }
+
+    .search-box .form-control,
+    .search-box .form-select {
+        font-size: 13px;
+        min-height: 43px;
+    }
+
+    .search-box .btn {
+        font-size: 13px;
+        min-height: 43px;
+    }
+
+    .search-box p {
+        font-size: 11px;
+    }
+
+
+    /* PROVIDER */
+
+    .provider-top {
+        min-height: 135px;
+        padding: 17px;
+    }
+
+    .provider-avatar {
+        font-size: 42px;
+    }
+
+    .provider-top .badge {
+        font-size: 9px;
+        padding: 6px 8px;
+    }
+
+    .provider-body {
+        padding: 17px;
+    }
+
+    .provider-body h5 {
+        font-size: 16px;
+    }
+
+    .provider-body p {
+        font-size: 12px;
+    }
+
+    .provider-body .small {
+        font-size: 11px !important;
+    }
+
+    .provider-body .rating {
+        font-size: 12px;
+    }
+
+    .provider-body .price {
+        font-size: 13px;
+    }
+
+    .provider-body .btn {
+        font-size: 12px;
+        padding: 9px;
+    }
+
+
+    /* FOOTER */
+
+    footer {
+        padding: 35px 0 !important;
+    }
+
+    footer p {
+        font-size: 12px;
+    }
+
+    footer a {
+        font-size: 12px;
+    }
+
+}
+
+
+/* ================= VERY SMALL PHONES ================= */
+
+@media only screen and (max-width: 374px) {
+
+    .container {
+        width: 92%;
+        max-width: 92%;
+    }
+
+
+    /* NAVBAR */
+
+    .navbar-brand {
+        font-size: 19px;
+    }
+
+
+    /* PAGE HEADER */
+
+    .page-header {
+        padding: 38px 0;
+    }
+
+    .page-header h1 {
+        font-size: 27px;
+    }
+
+    .page-header p {
+        font-size: 12px;
+    }
+
+
+    /* SECTION */
+
+    .section-padding {
+        padding: 38px 0;
+    }
+
+
+    /* SEARCH */
+
+    .search-box {
+        padding: 14px;
+        border-radius: 15px;
+    }
+
+    .search-box .form-label {
+        font-size: 11px;
+    }
+
+    .search-box .form-control,
+    .search-box .form-select {
+        font-size: 12px;
+        min-height: 41px;
+    }
+
+    .search-box .btn {
+        font-size: 12px;
+        min-height: 41px;
+    }
+
+    .search-box p {
+        font-size: 10px;
+    }
+
+
+    /* PROVIDER CARD */
+
+    .provider-top {
+        min-height: 120px;
+        padding: 14px;
+    }
+
+    .provider-avatar {
+        font-size: 37px;
+    }
+
+    .provider-top .badge {
+        font-size: 8px;
+        padding: 5px 7px;
+    }
+
+    .provider-body {
+        padding: 14px;
+    }
+
+    .provider-body h5 {
+        font-size: 15px;
+    }
+
+    .provider-body p {
+        font-size: 11px;
+        line-height: 1.5;
+    }
+
+    .provider-body .small {
+        font-size: 10px !important;
+    }
+
+    .provider-body .rating {
+        font-size: 11px;
+    }
+
+    .provider-body .price {
+        font-size: 12px;
+    }
+
+    .provider-body .btn {
+        font-size: 11px;
+        padding: 8px;
+    }
+
+
+    /* FOOTER */
+
+    footer {
+        padding: 30px 0 !important;
+    }
+
+    footer p {
+        font-size: 11px;
+    }
+
+    footer a {
+        font-size: 11px;
+    }
+
+}
+
+/* ========================================
+   REGISTER PAGE RESPONSIVE CSS
+   ======================================== */
+
+
+/* REGISTER SECTION */
+
+.register-section {
+    min-height: calc(100vh - 150px);
+    display: flex;
+    align-items: center;
+}
+
+
+/* REGISTER BOX */
+
+.register-box {
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+/* HOME BUTTON */
+
+.home-btn {
+    white-space: nowrap;
+}
+
+
+/* ========================================
+   LARGE DESKTOP
+   ======================================== */
+
+@media only screen and (min-width: 1200px) {
+
+    .register-box {
+        padding: 45px;
+    }
+
+}
+
+
+/* ========================================
+   LAPTOP / DESKTOP
+   ======================================== */
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+    .register-section {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .register-box {
+        padding: 40px;
+    }
+
+}
+
+
+/* ========================================
+   TABLET
+   ======================================== */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    .register-section {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .register-box {
+        padding: 35px;
+    }
+
+    .service-icon {
+        margin-bottom: 15px;
+    }
+
+}
+
+
+/* ========================================
+   MOBILE
+   ======================================== */
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+
+    .register-section {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .register-box {
+        padding: 30px;
+    }
+
+    .register-box h2 {
+        font-size: 28px;
+    }
+
+    .form-control,
+    .form-select {
+        min-height: 48px;
+    }
+
+    .home-btn {
+        padding: 8px 14px;
+        font-size: 14px;
+    }
+
+}
+
+
+/* ========================================
+   SMALL MOBILE
+   ======================================== */
+
+@media only screen and (min-width: 400px) and (max-width: 575px) {
+
+    .register-section {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .register-box {
+        padding: 25px 20px;
+        border-radius: 18px;
+    }
+
+    .register-box h2 {
+        font-size: 25px;
+    }
+
+    .register-box p {
+        font-size: 14px;
+    }
+
+    .form-label {
+        font-size: 14px;
+    }
+
+    .form-control,
+    .form-select {
+        min-height: 47px;
+        font-size: 14px;
+    }
+
+    .form-control::placeholder {
+        font-size: 13px;
+    }
+
+    .btn-primary {
+        font-size: 15px;
+    }
+
+    .home-btn {
+        padding: 7px 11px;
+        font-size: 13px;
+    }
+
+}
+
+
+/* ========================================
+   VERY SMALL MOBILE
+   ======================================== */
+
+@media only screen and (max-width: 399px) {
+
+    .register-section {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    .register-box {
+        padding: 22px 16px;
+        border-radius: 16px;
+    }
+
+    .register-box h2 {
+        font-size: 22px;
+        line-height: 1.3;
+    }
+
+    .register-box p {
+        font-size: 13px;
+    }
+
+    .service-icon {
+        width: 55px;
+        height: 55px;
+        font-size: 25px;
+        margin-bottom: 12px;
+    }
+
+    .form-label {
+        font-size: 13px;
+    }
+
+    .form-control,
+    .form-select {
+        min-height: 45px;
+        padding: 9px 11px;
+        font-size: 13px;
+    }
+
+    .form-control::placeholder {
+        font-size: 12px;
+    }
+
+    .form-check-label {
+        font-size: 12px;
+    }
+
+    .btn-primary {
+        font-size: 14px;
+        padding-top: 12px !important;
+        padding-bottom: 12px !important;
+    }
+
+    .home-btn {
+        padding: 6px 9px;
+        font-size: 12px;
+    }
+
+}
+
+
+/* ========================================
+   EXTRA SMALL DEVICES
+   ======================================== */
+
+@media only screen and (max-width: 320px) {
+
+    .container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .register-box {
+        padding: 20px 13px;
+    }
+
+    .register-box h2 {
+        font-size: 20px;
+    }
+
+    .home-btn {
+        padding: 5px 7px;
+        font-size: 11px;
+    }
+
+}
+
+/* ==========================================
+   REVIEW PAGE RESPONSIVE
+   ========================================== */
+
+.review-section {
+    width: 100%;
+}
+
+.review-box {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.dashboard-btn {
+    white-space: nowrap;
+}
+
+
+/* ==========================================
+   LARGE DESKTOP
+   ========================================== */
+
+@media only screen and (min-width: 1200px) {
+
+    .review-box {
+        padding: 45px;
+    }
+
+}
+
+
+/* ==========================================
+   LAPTOP / DESKTOP
+   ========================================== */
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+    .review-section {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .review-box {
+        padding: 40px;
+    }
+
+}
+
+
+/* ==========================================
+   TABLET
+   ========================================== */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    .review-section {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .review-box {
+        padding: 35px;
+    }
+
+    .page-header h1 {
+        font-size: 36px;
+    }
+
+}
+
+
+/* ==========================================
+   MOBILE
+   ========================================== */
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+
+    .review-section {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .review-box {
+        padding: 30px;
+        border-radius: 18px;
+    }
+
+    .page-header {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .page-header h1 {
+        font-size: 30px;
+        line-height: 1.3;
+    }
+
+    .page-header p {
+        font-size: 14px;
+    }
+
+    .form-control,
+    .form-select {
+        min-height: 48px;
+    }
+
+    .dashboard-btn {
+        padding: 8px 13px;
+        font-size: 14px;
+    }
+
+    .profile-avatar-large {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+
+/* ==========================================
+   SMALL MOBILE
+   ========================================== */
+
+@media only screen and (min-width: 400px) and (max-width: 575px) {
+
+    .review-section {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .review-box {
+        padding: 25px 20px;
+        border-radius: 18px;
+    }
+
+    .page-header {
+        padding-top: 45px;
+        padding-bottom: 45px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .page-header h1 {
+        font-size: 26px;
+        line-height: 1.3;
+    }
+
+    .page-header p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .form-label {
+        font-size: 14px;
+    }
+
+    .form-control,
+    .form-select {
+        min-height: 47px;
+        font-size: 14px;
+    }
+
+    .form-control::placeholder {
+        font-size: 13px;
+    }
+
+    .review-box h3 {
+        font-size: 23px;
+    }
+
+    .status {
+        font-size: 12px;
+        padding: 7px 12px;
+    }
+
+    .star-choice {
+        font-size: 22px;
+        letter-spacing: 2px;
+    }
+
+    .review-note {
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+    .dashboard-btn {
+        padding: 7px 11px;
+        font-size: 13px;
+    }
+
+}
+
+
+/* ==========================================
+   VERY SMALL MOBILE
+   ========================================== */
+
+@media only screen and (max-width: 399px) {
+
+    .review-section {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    .review-box {
+        padding: 22px 16px;
+        border-radius: 16px;
+    }
+
+    .page-header {
+        padding: 35px 12px;
+    }
+
+    .page-header h1 {
+        font-size: 22px;
+        line-height: 1.35;
+    }
+
+    .page-header p {
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+    .page-header span {
+        font-size: 12px;
+    }
+
+    .review-box h3 {
+        font-size: 21px;
+    }
+
+    .review-box .text-muted {
+        font-size: 13px;
+    }
+
+    .form-label {
+        font-size: 13px;
+    }
+
+    .form-control,
+    .form-select {
+        min-height: 45px;
+        padding: 9px 11px;
+        font-size: 13px;
+    }
+
+    .form-control::placeholder {
+        font-size: 12px;
+    }
+
+    textarea.form-control {
+        min-height: 130px;
+    }
+
+    .star-choice {
+        font-size: 19px;
+        letter-spacing: 1px;
+    }
+
+    .review-note {
+        padding: 12px;
+        font-size: 12px;
+        line-height: 1.6;
+    }
+
+    .dashboard-btn {
+        padding: 6px 9px;
+        font-size: 12px;
+    }
+
+    .btn-primary {
+        font-size: 14px;
+        padding-top: 12px !important;
+        padding-bottom: 12px !important;
+    }
+
+}
+
+
+/* ==========================================
+   EXTRA SMALL DEVICES
+   ========================================== */
+
+@media only screen and (max-width: 320px) {
+
+    .container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .review-box {
+        padding: 20px 13px;
+    }
+
+    .page-header h1 {
+        font-size: 20px;
+    }
+
+    .dashboard-btn {
+        padding: 5px 7px;
+        font-size: 11px;
+    }
+
+    .review-box h3 {
+        font-size: 19px;
+    }
+
+    .star-choice {
+        font-size: 17px;
+    }
+
+}
+

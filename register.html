@@ -1,0 +1,264 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>ServiceHub | Local Services</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar shadow-sm">
+
+        <div class="container">
+
+            <a class="navbar-brand" href="index.html">
+                ServiceHub<span class="logo-dot"></span>
+            </a>
+
+            <a href="index.html"
+               class="btn btn-outline-primary home-btn">
+
+                ← Home
+
+            </a>
+
+        </div>
+
+    </nav>
+
+
+    <!-- REGISTER SECTION -->
+
+    <section class="section-padding register-section">
+
+        <div class="container">
+
+            <div class="row justify-content-center">
+
+                <div class="col-12 col-sm-11 col-md-8 col-lg-6">
+
+                    <div class="form-box register-box">
+
+                        <!-- HEADING -->
+
+                        <div class="text-center mb-4">
+
+                            <div class="service-icon icon-pink">
+                                🌷
+                            </div>
+
+                            <h2 class="fw-bold">
+                                Create Your Account
+                            </h2>
+
+                            <p class="text-muted">
+                                Join ServiceHub today.
+                            </p>
+
+                        </div>
+
+
+                        <!-- FORM -->
+
+                        <form action="customer-dashboard.html">
+
+
+                            <!-- FULL NAME -->
+
+                            <div class="mb-3">
+
+                                <label class="form-label">
+                                    Full Name *
+                                </label>
+
+                                <input type="text"
+                                       class="form-control"
+                                       placeholder="Enter your full name"
+                                       required>
+
+                            </div>
+
+
+                            <!-- EMAIL -->
+
+                            <div class="mb-3">
+
+                                <label class="form-label">
+                                    Email *
+                                </label>
+
+                                <input type="email"
+                                       class="form-control"
+                                       placeholder="you@example.com"
+                                       required>
+
+                            </div>
+
+
+                            <!-- PHONE -->
+
+                            <div class="mb-3">
+
+                                <label class="form-label">
+                                    Phone Number *
+                                </label>
+
+                                <input type="tel"
+                                       class="form-control"
+                                       placeholder="03XX-XXXXXXX"
+                                       required>
+
+                            </div>
+
+
+                            <!-- ACCOUNT TYPE -->
+
+                            <div class="mb-3">
+
+                                <label class="form-label">
+                                    Account Type *
+                                </label>
+
+                                <select class="form-select"
+                                        required>
+
+                                    <option value="">
+                                        Select account type
+                                    </option>
+
+                                    <option>
+                                        Customer
+                                    </option>
+
+                                    <option>
+                                        Service Provider
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+
+                            <!-- PASSWORD -->
+
+                            <div class="mb-3">
+
+                                <label class="form-label">
+                                    Password *
+                                </label>
+
+                                <input type="password"
+                                       class="form-control"
+                                       minlength="6"
+                                       placeholder="Minimum 6 characters"
+                                       required>
+
+                            </div>
+
+
+                            <!-- CONFIRM PASSWORD -->
+
+                            <div class="mb-4">
+
+                                <label class="form-label">
+                                    Confirm Password *
+                                </label>
+
+                                <input type="password"
+                                       class="form-control"
+                                       minlength="6"
+                                       placeholder="Confirm your password"
+                                       required>
+
+                            </div>
+
+
+                            <!-- TERMS -->
+
+                            <div class="form-check mb-4">
+
+                                <input class="form-check-input"
+                                       type="checkbox"
+                                       required>
+
+                                <label class="form-check-label small">
+                                    I agree to the ServiceHub terms.
+                                </label>
+
+                            </div>
+
+
+                            <!-- BUTTON -->
+
+                            <button type="submit"
+                                    class="btn btn-primary w-100 py-3">
+
+                                Create Account
+
+                            </button>
+
+
+                        </form>
+
+
+                        <!-- LOGIN LINK -->
+
+                        <p class="text-center text-muted mt-4 mb-0">
+
+                            Already have an account?
+
+                            <a href="login.html"
+                               class="text-sage fw-bold">
+
+                                Login
+
+                            </a>
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer class="py-4 text-center">
+
+        <div class="container">
+
+            <small>
+                © 2026 ServiceHub
+            </small>
+
+        </div>
+
+    </footer>
+
+
+</body>
+
+</html>
+
