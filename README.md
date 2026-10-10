@@ -2,6 +2,12 @@
 
 🌐 **[View Live Demo](https://mahnoor-fahimali.github.io/femhack-2026/)** | 💻 **[View Source Code](https://github.com/mahnoor-fahimali/femhack-2026)**
 
+## 📸 Project Preview
+
+![ServiceHub Homepage](servicehub-homepage.png)
+
+
+
 ### Discover. Connect. Book.
 
 **ServiceHub** is a web development project designed to make finding and booking local service providers easier and more convenient. The platform aims to connect customers with service professionals through an organized, user-friendly website.
