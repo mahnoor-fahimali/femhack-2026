@@ -39,6 +39,19 @@ The goal is to create a convenient experience for customers while providing serv
 - **CSS3** — Styles the interface, layouts, and visual elements.
 - **JavaScript** — Supports interactive functionality where implemented.
 
+## 🚀 How to Run Locally
+
+1. Clone this repository:
+
+   ```bash
+   git clone https://github.com/mahnoor-fahimali/femhack-2026.git
+   ```
+
+2. Open the project folder.
+3. Open `index.html` in your browser, or use the Live Server extension in VS Code.
+
+🌐 Alternatively, visit the [Live Demo](https://mahnoor-fahimali.github.io/femhack-2026/).
+
 ## 📂 Project Structure
 
 | File | Purpose |
